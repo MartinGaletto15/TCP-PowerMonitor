@@ -1,0 +1,5 @@
+1. El Servidor (El "Centro de Control")
+Debe quedar escuchando, recibir los datos, "parsearlos" (convertirlos de texto a números) y mostrar una alerta si el voltaje es peligroso.
+
+2. El Cliente (El "Medidor Inteligente")
+Debe enviar datos cada 3 segundos y, si el servidor se cae, debe intentar reconectarse solo (esto es clave en la industria).

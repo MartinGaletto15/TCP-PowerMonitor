@@ -1,0 +1,27 @@
+
+[Cliente TCP]
+TcpClient nos da la capacidad de conectarnos, enviar y reciibir datos a través de una red utilizando el protocolo TCP de manera
+sincrona. (para complementar TcpClient, también existe TcpListener que se utiliza para crear un servidor TCP).
+
+Para utilizar TcpClient, primero debemos crear una instancia de la clase y luego llamar al método Connect para establecer
+una conexión con el servidor. Una vez conectados, podemos usar los métodos GetStream para obtener un flujo de datos que nos
+permitirá enviar y recibir información.
+
+Una vez establecida la conexión, puedes usar el método GetStream() para obtener un NetworkStream, que es un flujo de datos que te
+permite enviar y recibir información a través de la conexión TCP. Puedes escribir datos en el NetworkStream utilizando el método Write
+y leer datos utilizando el método Read.
+
+Al terminar se usa el metodo Close() para cerrar la conexión y liberar los recursos asociados.
+
+
+
+[Servidor TCP]
+TcpListener es una clase que nos permite crear un servidor TCP que puede aceptar conexiones entrantes de clientes. Para usar TcpListener,
+debemos crear una instancia TcpListener(ipAddress, port) y luego al metodo start().
+
+Cuando se reciba una conexion entrante, debemos aceptarla con el metodo AcceptTcpClient(),
+que devuelve un objeto TcpClient que representa la conexión con el cliente. A partir de ahí, podemos usar el TcpClient
+con sus metodos GetStream() para obtener un NetworkStream y enviar o recibir datos con el cliente.
+
+luego podemos cerral a conexion con el metodo Close() para liberar los recursos asociados.
+Es importante manejar las conexiones de manera adecuada para evitar problemas de rendimiento o seguridad en el servidor.
