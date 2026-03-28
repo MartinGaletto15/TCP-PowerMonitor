@@ -31,7 +31,6 @@ Simula un dispositivo físico conectado a la red eléctrica que envía telemetr�
 
 A través de este desarrollo, se aplicaron conceptos fundamentales de redes y .NET:
 
-- **Ciclo de Vida del Socket:** Manejo desde la instanciación y `Start()` hasta la liberación de recursos mediante el método `Close()` y sentencias `using`.
 - **Manejo de Buffers:** Gestión de arrays de bytes para la recepción y lectura eficiente de información.
 - **Robustez:** Tratamiento de excepciones de red para detectar desconexiones abruptas y mantener la estabilidad del servidor.
 
@@ -40,14 +39,6 @@ A través de este desarrollo, se aplicaron conceptos fundamentales de redes y .N
 1. Clonar el repositorio.
 2. Ejecutar primero el proyecto **Server** para habilitar el puerto de escucha (Puerto 12345).
 3. Ejecutar el proyecto **Client** para comenzar el envío de telemetría y observar la reconexión automática en caso de ser necesario.
-
----
-
-### 📝 Roadmap / Futuras Mejoras
-
-- [ ] **Serialización Binaria:** Migrar de strings a un protocolo binario puro para reducir el consumo de ancho de banda.
-- [ ] **Seguridad:** Integrar TLS/SSL para cifrar la comunicación entre medidores y la central.
-- [ ] **Escalabilidad:** Implementar manejo de múltiples clientes simultáneos mediante hilos dedicados o tareas independientes.
 
 ---
 
